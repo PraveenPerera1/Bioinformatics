@@ -90,11 +90,7 @@ legend(
   bty = "n"
 )
 
-axis(
-  side = 2,
-  at = pretty(c(0, max(sample_clusters$height))),
-  las = 1
-)
+
 
 dev.off()
 
@@ -131,7 +127,15 @@ plot(
   sub = "",
   ylab = "Euclidean distance (complete linkage)",
   hang = -1,
-  cex = 0.8
+  cex = 0.8,
+  ylim = c(0, max(sample_clusters$height) * 1.1),
+  yaxt = "n"
+)
+
+axis(
+  side = 2,
+  at = pretty(c(0, max(sample_clusters$height))),
+  las = 1
 )
 
 dev.off()
