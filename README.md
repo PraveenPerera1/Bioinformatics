@@ -157,6 +157,13 @@ The recorded environment was R 4.6.2 on Windows 11 x64, with GEOquery 2.80.1, Bi
 
 After correcting a misplaced clustering-axis command in the exploratory script, I ran all six scripts in a separate `Rscript --vanilla` process. The process returned exit status **0** and reproduced the reported PCA percentages and differential-expression result. Earlier checks also confirmed that all eight expected CSV and figure files existed. This validates execution in the recorded local environment, not universal compatibility across computers.
 
+## R Markdown report
+
+- [R Markdown source](code/analysis_report.Rmd)
+- [Rendered HTML report](code/analysis_report.html)
+
+Download the HTML file and open it in a browser to view the report.
+
 ## Sources and attribution
 
 - [NCBI GEO GSE136701](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136701): dataset and study metadata.
